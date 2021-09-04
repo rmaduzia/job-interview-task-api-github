@@ -1,4 +1,4 @@
-package com.jobinterview.jobinterviewtaskapigithub;
+package com.jobinterview.apigithub;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

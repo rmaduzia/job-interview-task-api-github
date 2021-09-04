@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:9.6.8:///postgres?TC_INITSCRIPT=file:src/main/resources/schema.sql
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    username: test
+    password: test
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect

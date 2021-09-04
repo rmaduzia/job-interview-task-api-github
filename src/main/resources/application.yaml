@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    username: postgres
+    password: postgres
+    hikari:
+      connection-timeout: 10000
+      minimum-idle: 10
+      maximum-pool-size: 50
+      idle-timeout: 200000
+      max-lifetime: 1100000
+    url: jdbc:postgresql://localhost:5432/postgres
+    jdbc-url: jdbc:postgresql://localhost:5432/postgres
+  sql:
+    init:
+      schema-locations: classpath:schema.sql
+      mode: always
