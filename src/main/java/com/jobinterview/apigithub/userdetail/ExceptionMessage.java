@@ -12,8 +12,4 @@ public enum ExceptionMessage {
     ExceptionMessage(String value) {
         this.value = value;
     }
-
-    public String toValue() {
-        return value;
-    }
 }
