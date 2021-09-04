@@ -5,17 +5,36 @@
 Details:
 Create a simple rest service which one gonna return the following details:
 
-ID
-Login
-Name
-Type
-Avatar Url
-Create Date
-Calculations *
+ID\
+Login\
+Name\
+Type\
+Avatar Url\
+Create Date\
+*Calculations\
 
 *calculations =  6 / followersAmount * (2 + publicReposAmount).
 
+API should look like below:
+GET /users/{​​​​​​login}​​​​​​
 
+{​​​​​​
+
+"id": "...",
+
+"login": "...",
+
+"name": "…",
+
+"type": "...",
+
+"avatarUrl": „”,
+
+"createdAt": "..."
+
+"calculations": "..."
+
+}
 
 Service should get date from https://api.github.com/users/{login}
 
