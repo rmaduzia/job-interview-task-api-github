@@ -39,6 +39,7 @@ public class UserDetailTestsIT {
     @Autowired
     private MockMvc mockMvc;
 
+    private static final String getUserDetailApiUrl = "/users/";
     private static final String userLoginWhichOneNotExists = "someWrongLogin7345636346";
     private static final String userLoginWhichExists = "rmaduzia";
 
@@ -48,7 +49,7 @@ public class UserDetailTestsIT {
     @Order(1)
     public void getUserFromGithubApi() throws Exception {
 
-        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get("/user/"+ userLoginWhichExists))
+        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get(getUserDetailApiUrl + userLoginWhichExists))
                 .andExpect(status().isOk())
                 .andReturn();
 
@@ -66,7 +67,7 @@ public class UserDetailTestsIT {
     @Order(2)
     public void getUserFromGithubApiWhenUserAlreadyExistsInDatabase() throws Exception {
 
-        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get("/user/"+ userLoginWhichExists))
+        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get(getUserDetailApiUrl + userLoginWhichExists))
                 .andExpect(status().isOk())
                 .andReturn();
 
@@ -83,7 +84,7 @@ public class UserDetailTestsIT {
     @Test
     public void throwExceptionWhenUserDoesNotExists() throws Exception {
 
-        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get("/user/"+ userLoginWhichOneNotExists))
+        MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get(getUserDetailApiUrl + userLoginWhichOneNotExists))
                 .andExpect(status().isNotFound())
                 .andReturn();
 
