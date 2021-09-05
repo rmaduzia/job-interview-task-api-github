@@ -3,8 +3,7 @@
 
 
 Details:
-Create a simple rest service which one gonna return the following details:
-
+Details: Create a simple rest service which one going to return the following details:\
 ID\
 Login\
 Name\
