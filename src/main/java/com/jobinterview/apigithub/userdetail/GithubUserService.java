@@ -22,7 +22,7 @@ public class GithubUserService {
 
     private final UserRepository userRepository;
 
-    UserDetailsDto getUserDetail(String userLogin) {
+    public UserDetailsDto getUserDetail(String userLogin) {
 
         String url = addUserLoginIntoUrl(userLogin);
 
