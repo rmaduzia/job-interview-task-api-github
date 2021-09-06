@@ -117,6 +117,6 @@ public class UserDetailTestsIT {
     }
 
     public static String getValidUserDetail() {
-        return "{\"id\":\"47938303\",\"login\":\"rmaduzia\",\"name\":\"null\",\"type\":\"User\",\"avatarUrl\":\"https://avatars.githubusercontent.com/u/47938303?v=4\",\"created_at\":\"2019-02-24T08:14:23Z\",\"calculations\":\"84.0\"}";
+        return "{\"id\":\"47938303\",\"login\":\"rmaduzia\",\"name\":\"null\",\"type\":\"User\",\"avatarUrl\":\"https://avatars.githubusercontent.com/u/47938303?v=4\",\"created_at\":\"2019-02-24T08:14:23Z\",\"calculations\":\"90.0\"}";
     }
 }
